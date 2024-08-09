@@ -525,6 +525,67 @@ body { background: var(--white); }
   margin-bottom: 20px;
   color: #444;
 }
+/* General styling for about section */
+.about {
+  padding: 40px 20px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-img figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .about-text h1, .about-text h2, .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .card-img figure img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0 5px;
+  }
+
+  .about-text h1, .about-text h2, .about-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
 
 /*-----------------------------------*\
  * #camping
