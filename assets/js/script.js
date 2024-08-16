@@ -104,5 +104,14 @@ document.getElementById("booking-form").addEventListener("submit", function(even
       alert("Failed to send booking request. Please try again.");
       console.error("EmailJS error:", error);
     });
+    /**
+ * BOOK
+ */
+// Ensure the Book now button works independently
+document.getElementById('book-now-btn').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.querySelector('#book').scrollIntoView({ behavior: 'smooth' });
+});
+
     
 });
