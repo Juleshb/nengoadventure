@@ -884,7 +884,25 @@ ul li {
 
 .popular .btn { margin-inline: auto; }
 
+/*-----------------------------------*\
+ * #BOOK
+\*-----------------------------------*/
+#book-now-btn {
+  margin-top: 10px; /* Adjust as necessary */
+  display: inline-block;
+  text-align: center;
+}
 
+@media (max-width: 768px) {
+  /* Make sure the navbar and button are stacked on small screens */
+  .header .container {
+    flex-direction: column;
+  }
+
+  #book-now-btn {
+    margin-top: 20px;
+  }
+}
 
 
 
